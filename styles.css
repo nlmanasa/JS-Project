@@ -1,0 +1,36 @@
+.uiContainer {
+    background-color: beige;
+    display: flex;
+    column-gap: 400px;
+}
+
+.container {
+    margin: 20px;
+}
+
+button {
+    margin-top: 20px !important;
+}
+
+img {
+    height: 400px;
+}
+
+#decadeDropdown {
+    height: 50px;
+    width: 110px;
+}
+
+#movieselcet {
+    color: black;
+}
+
+.mainheadlabel {
+    text-align: center;
+    color: black;
+    background-color: rgba(107, 168, 223, 0.089);
+    margin-left: 300px;
+    margin-top: 20px;
+    margin-right: 300px;
+    margin-bottom: 5px;
+}

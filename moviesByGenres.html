@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Learning is Fun</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon-img.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
+  <script src="./src/moviesByGenres.js"></script>
+</head>
+
+<body>
+  <div class="ui container" id="app">
+    <h1 class="ui header">Movie Genres</h1>
+    <h3 class="ui header">Genres:</h3>
+    <div class="ui list" id="genres-container"></div>
+
+    <div class="ui form">
+      <div class="inline fields">
+        <label>Logic:</label>
+        <div class="field">
+          <div class="ui radio checkbox">
+            <input type="radio" id="orCondition" name="logic" value="OR" onchange="setLogicCondition()" checked>
+            <label for="orCondition">OR</label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui radio checkbox">
+            <input type="radio" id="andCondition" name="logic" value="AND" onchange="setLogicCondition()">
+            <label for="andCondition">AND</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br/>
+
+    <button class="ui primary button" type="button" onclick="filterGenres()">Submit</button>
+    <br/>
+    <br/>
+    <div id="resultContainer">
+      <!-- Result will be displayed here -->
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Learning is Fun</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon-img.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
+  <script src="./src/moviesByLanguage.js"></script>
+</head>
+
+<body>
+  <div class="ui container">
+    <h2 class="ui header">Select your favorite movie language:</h2>
+
+    <div class="ui form">
+      <div class="grouped fields">
+        <div class="field">
+          <div class="ui radio checkbox">
+            <input type="radio" name="fav_language" value="International">
+            <label>International</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="ui radio checkbox">
+            <input type="radio" name="fav_language" value="Hindi">
+            <label>Hindi</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="ui radio checkbox">
+            <input type="radio" name="fav_language" value="Both">
+            <label>Both</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="ui primary button" type="button" onclick="filterMoviesByLanguage()">Submit</button>
+    <br/> 
+    <br/>
+    <div id="content" class="ui link cards">
+      <!-- Movie content will be displayed here -->
+    </div>
+  </div>
+</body>
+</html>

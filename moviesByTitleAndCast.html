@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Learning is Fun</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon-img.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
+  <script src="./src/moviesByTitleAndCast.js"></script>
+</head>
+
+<body>
+  <div class="ui container">
+    <div class="ui form">
+      <div class="field">
+        <label for="filterInput">Filter by Movie Name or Cast Member:</label>
+        <input type="text" id="filterInput">
+      </div>
+      <button class="ui primary button" type="button" onclick="filterMovies()">Search</button>
+    </div>
+    <br/>
+    <br/>
+    
+    <div id="resultContainer" class="ui link cards">
+      <!-- Movie cards will be dynamically inserted here -->
+    </div>
+  </div>
+</body>
+</html>

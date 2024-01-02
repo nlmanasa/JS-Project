@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+ 
+<head>
+  <title>Learning is Fun</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon-img.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
+  <script src="./index.js"></script>
+ 
+</head>
+ <body>
+  <div class="mainheadlabel">
+    <h1 class="moviesnamehead">Movie App</h1>
+  </div>
+  <br/>
+  <br/>
+  <div class="uiContainer">
+    <div class="movieandcontiner" id="movieselcet">
+      <h3 class="ui header">Select your favorite movie language:</h3>
+      <div class="ui form">
+        <div class="grouped fields">
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="fav_language" value="International" onchange="filterMovies()">
+              <label>International</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="fav_language" value="Hindi" onchange="filterMovies()">
+              <label>Hindi</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="fav_language" value="Both" onchange="filterMovies()">
+              <label>Both</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui form">
+        <h3 for="decadeDropdown">Select Decade:</h3>
+        <select id="decadeDropdown" class="ui dropdown" onchange="filterDecade()">
+          <!-- Decades will be populated here dynamically -->
+        </select>
+      </div>
+      <br/>
+      <div class="movieSearch">
+        <div class="ui form">
+          <div class="field">
+            <h3 for="filterInput">Search Movies By Name or Cast Member:</h3>
+            <input type="text" id="filterInput" placeholder="Search movies...">
+          </div>
+          <button class="ui primary button" type="button" onclick="filterMoviesByTitleOrCast()">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="movie generater" id="app">
+      <h3 class="ui header">Select Genres:</h3>
+      <div class="ui list" id="genres-container"></div>
+      <div class="ui form">
+        <div class="inline fields">
+          <label>Logic:</label>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" id="orCondition" name="logic" value="OR" onchange="setLogicCondition()" checked>
+              <label for="orCondition">OR</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" id="andCondition" name="logic" value="AND" onchange="setLogicCondition()">
+              <label for="andCondition">AND</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="ui primary button" type="button" onclick="filterGenres()">Submit</button>
+    </div>
+  </div>
+  <br/>
+  <br/>
+
+  <div id="content" class="ui link cards">
+    <!-- Movie content will be displayed here -->
+  </div>
+</body>
+</html>
