@@ -1,4 +1,8 @@
 # JS-Project
+
+## Overview
+The provided project is a Movie App implemented using HTML, JavaScript, and CSS. The app leverages The Movie Database (TMDb) API to fetch movie data dynamically. Users can interact with the app through a user-friendly web interface to select their favorite movie language, filter movies by decade and genres, search for movies by title or cast.
+
 ## Configure Project
 - On a command prompt, clone the repository using command `git clone https://github.com/nlmanasa/JS-Project.git` in a directory of your choice. It will create directory `JS-Project` with the contents of this repository. 
 - In VS Code, use `File > Open Folder` (Windows) or `File > Open` (Mac) to open the `JS-Project` folder.
