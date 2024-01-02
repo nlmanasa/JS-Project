@@ -1,5 +1,5 @@
 .uiContainer {
-    background-color: beige;
+    background-color: rgba(107, 168, 223, 0.089);
     display: flex;
     column-gap: 400px;
 }
